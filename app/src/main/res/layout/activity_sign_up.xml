@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunny_background"
+    android:padding="16dp"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/signuptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="SIGN UP"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usrnametxt"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="15dp"
+        android:hint="Enter username"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailsign"
+        app:layout_constraintEnd_toEndOf="@+id/signuptxt"
+        app:layout_constraintStart_toStartOf="@+id/signuptxt"
+        app:layout_constraintTop_toBottomOf="@+id/signuptxt" />
+
+    <EditText
+        android:id="@+id/emailsign"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter email"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signpass"
+        app:layout_constraintEnd_toEndOf="@+id/usrnametxt"
+        app:layout_constraintStart_toStartOf="@+id/usrnametxt"
+        app:layout_constraintTop_toBottomOf="@+id/usrnametxt" />
+
+    <EditText
+        android:id="@+id/signpass"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter passowrd"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign"
+        app:layout_constraintEnd_toEndOf="@+id/emailsign"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/emailsign"
+        app:layout_constraintTop_toBottomOf="@+id/emailsign" />
+
+    <Button
+        android:id="@+id/btn_sign"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/signpass"
+        app:layout_constraintStart_toStartOf="@+id/signpass"
+        app:layout_constraintTop_toBottomOf="@+id/signpass" />
+
+    <TextView
+        android:id="@+id/alreadysignuptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already Registered? Login In"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
